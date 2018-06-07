@@ -1,5 +1,5 @@
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
   font-size: 1.1rem;
   background: #1A4971;
   color: #F9F4E5;
@@ -7,7 +7,7 @@ html {
 
 body {
   width: 98%;
-  max-width: 30rem;
+  max-width: 35rem;
   margin: auto;
 }
 
@@ -20,6 +20,10 @@ h1 {
 h3 {
   font-size: 1.1rem;
   font-weight: bold;
+}
+
+input {
+  font-family: monospace;
 }
 
 .row {
@@ -35,9 +39,8 @@ h3 {
   border-radius: 10%;
 }
 
-.calculator {
-  font-family: monospace;
-  background-color: 99B512;
+.webapp {
+  background-color: #99B512;
   border-radius: 2rem;
   padding-top: 5%;
   padding-left: 5%;
@@ -45,19 +48,30 @@ h3 {
   padding-bottom: 5%;
 }
 
-.monospace {
-  font-family: monospace;
+.webapp_btn {
+  line-height: 5rem;
+  width: 22%;
+  font-size: 5rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px #999;
+  background-color: #F9F4E5;
+  cursor: pointer;
 }
 
-#display {}
+.webapp_btn:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
 
 #display_box {
-  background-color: #F9F4E5;
   color: black;
   margin: auto;
   border-radius: 2rem;
   font-size: 5rem;
   text-align: right;
+  background-color: #F9F4E5;
 }
 
 #output {
