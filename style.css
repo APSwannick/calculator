@@ -1,0 +1,72 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  background: #1A4971;
+  color: #F9F4E5;
+}
+
+body {
+  width: 98%;
+  max-width: 30rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Shojumaru';
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.row {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.selection_btn {
+  width: 30%;
+  font-size: 4.5rem;
+  border-style: none;
+  padding-bottom: .6rem;
+  border-radius: 10%;
+}
+
+.calculator {
+  font-family: monospace;
+  background-color: 99B512;
+  border-radius: 2rem;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+#display {}
+
+#display_box {
+  background-color: #F9F4E5;
+  color: black;
+  margin: auto;
+  border-radius: 2rem;
+  font-size: 5rem;
+  text-align: right;
+}
+
+#output {
+  line-height: 5rem;
+  font-size: 5rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: right;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  border-radius: 1rem;
+}
