@@ -1,8 +1,8 @@
 html {
   font-family: monospace;
   font-size: 1.1rem;
-  background: #1A4971;
-  color: #F9F4E5;
+  background: #D1CCDC;
+  color: #424C55;
 }
 
 body {
@@ -40,7 +40,7 @@ input {
 }
 
 .webapp {
-  background-color: #99B512;
+  background-color: #424C55;
   border-radius: 2rem;
   padding-top: 5%;
   padding-left: 5%;
@@ -56,8 +56,8 @@ input {
   border-radius: 1.5rem;
   border: none;
   outline: none;
-  box-shadow: 0 4px #999;
-  background-color: #F9F4E5;
+  box-shadow: 0 4px #7F95D1;
+  background-color: #F5EDF0;
   cursor: pointer;
 }
 
@@ -67,10 +67,10 @@ input {
 
 .webapp_btn:active,
 .active {
-  box-shadow: 0 2px #666;
+  box-shadow: 0 2px #7F95D1;
   border-top: 10px transparent;
   background-clip: padding-box;
-  background: red;
+  background: #7F95D1;
   top: 2px;
 }
 

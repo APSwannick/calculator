@@ -2,15 +2,23 @@ var mem = {
   //Use strings to allow additional numbers per user expectations
   num1: '',
   op: '',
-  num2: ''
+  num2: '',
+  status_total: Boolean(false)
 };
 
 function calculator(button) {
-  console.log('Button Press: ' + button);
 
   let curr_num;
   var history = Boolean(mem.num1 && mem.op);
   curr_num = history ? mem.num2 : mem.num1;
+
+  //If Just Totaled - Do not add to string
+  if (mem.status_total == true) {
+    curr_num = '';
+    mem.status_total = false;
+  }
+
+  console.log('Button Press: ' + button);
 
   switch (button) {
     case '0':
@@ -52,10 +60,15 @@ function calculator(button) {
     case '+':
     case '-':
       //If total-able then total before assigning op
+      if (!curr_num) {
+        break;
+      }
       if (history) {
+        console.log("Total-able")
         curr_num = '';
         history_total(mem);
       }
+
       mem.op = button;
       break;
     case 'equal':
@@ -111,11 +124,13 @@ function history_total(mem) {
     mem.num1 = eval(mem.num1 + mem.op + mem.num2);
     mem.op = '';
     mem.num2 = '';
+    mem.status_total = true;
     return mem.num1;
   } else {
     mem.num1 = mem.num1;
     mem.op = '';
     mem.num2 = '';
+    mem.status_total = true;
     return mem.num1;
   }
 }
