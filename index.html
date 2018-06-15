@@ -12,36 +12,45 @@
   </div>
 
   <div class="row webapp monospace" id="calc_body">
-    <div id="display">
-      <input type="text" id="output" name="output" value="" readonly>
+    <div class="row">
+      <div id="display" class="display_box">
+        <input type="text" id="history" class="output output_small" name="history" data-total="0.0" value="" readonly>
+        <input type="text" id="output" class="output output_large" name="output" value="" readonly>
+      </div>
     </div>
     <div class="row">
-      <input type="button" class="webapp_btn" value="7" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="8" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="9" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="&divide;" onclick="myfun(this.value)" />
+      <input type="button" class="webapp_btn double_btn" value="C" id="clear" onclick="calculator(this.id)" />
+      <input type="button" class="webapp_btn" value="&plusmn;" id="sign_change" onclick="calculator(this.id)" />
+      <input type="button" class="webapp_btn" value="&larr;" id="backspace" onclick="calculator(this.id)" />
     </div>
     <div class="row">
-      <input type="button" class="webapp_btn" value="4" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="5" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="6" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="&times;" onclick="myfun(this.value)" />
+      <input type="button" class="webapp_btn" value="7" id="7" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="8" id="8" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="9" id="9" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="&divide;" id="/" onclick="calculator(this.id)" />
     </div>
     <div class="row">
-      <input type="button" class="webapp_btn" value="1" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="2" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="3" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="&minus;" id="minus" onclick="myfun(this.id)" />
+      <input type="button" class="webapp_btn" value="4" id="4" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="5" id="5" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="6" id="6" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="&times;" id="*" onclick="calculator(this.id)" />
     </div>
     <div class="row">
-      <input type="button" class="webapp_btn" value="0" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="&period;" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="&plus;" onclick="myfun(this.value)" />
-      <input type="button" class="webapp_btn" value="&equals;" onclick="myfun(this.value)" />
+      <input type="button" class="webapp_btn" value="1" id="1" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="2" id="2" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="3" id="3" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="&minus;" id="-" onclick="calculator(this.id)" />
     </div>
-
+    <div class="row">
+      <input type="button" class="webapp_btn" value="0" id="0" onclick="calculator(this.value)" />
+      <input type="button" class="webapp_btn" value="&period;" id="period" onclick="calculator(this.id)" />
+      <input type="button" class="webapp_btn" value="&plus;" id="+" onclick="calculator(this.id)" />
+      <input type="button" class="webapp_btn" value="&equals;" id="equal" onclick="calculator(this.id)" />
+    </div>
   </div>
-
+  <div class="row">
+    <p>Patrick Swannick, 2018</p>
+  </div>
 
 
 </body>

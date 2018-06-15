@@ -49,9 +49,10 @@ input {
 }
 
 .webapp_btn {
-  line-height: 5rem;
+  position: relative;
+  line-height: 4rem;
   width: 22%;
-  font-size: 5rem;
+  font-size: 4rem;
   border-radius: 1.5rem;
   border: none;
   outline: none;
@@ -60,27 +61,48 @@ input {
   cursor: pointer;
 }
 
-.webapp_btn:active {
-  box-shadow: 0 2px #666;
-  transform: translateY(4px);
+.double_btn {
+  width: 44%;
 }
 
-#display_box {
+.webapp_btn:active,
+.active {
+  box-shadow: 0 2px #666;
+  border-top: 10px transparent;
+  background-clip: padding-box;
+  background: red;
+  top: 2px;
+}
+
+.display_box {
   color: black;
   margin: auto;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   font-size: 5rem;
   text-align: right;
-  background-color: #F9F4E5;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: white;
 }
 
-#output {
-  line-height: 5rem;
-  font-size: 5rem;
+.output {
   width: 100%;
   box-sizing: border-box;
   text-align: right;
-  padding-right: .5rem;
-  padding-left: .5rem;
-  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.output_large {
+  line-height: 5rem;
+  font-size: 5rem;
+  text-align: right;
+  border: none;
+}
+
+.output_small {
+  line-height: 2rem;
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: -1rem;
+  border: none;
 }
